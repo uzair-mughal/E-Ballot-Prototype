@@ -3,9 +3,7 @@
 CREATE TABLE nadra_info (
 	
 	CNIC varchar(13) NOT NULL,
-	FName varchar(100) NOT NULL,
-	MName varchar(100),
-	LName varchar(100) NOT NULL,
+	NAME varchar(100) NOT NULL,
 	FATHER_NAME varchar(100) NOT NULL,
  	GENDER varchar(100) DEFAULT NULL,
   	DOB date NOT NULL,
@@ -17,4 +15,4 @@ CREATE TABLE nadra_info (
   	PROVINCE varchar(100) NOT NULL,
   	PRIMARY KEY (`CNIC`)
 
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;=latin1
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;

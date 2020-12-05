@@ -1,15 +1,20 @@
 1-
-CREATE TABLE `nadra_info` (
-  `CNIC` varchar(13) NOT NULL,
-  `NAME` varchar(100) NOT NULL,
-  `FATHER_NAME` varchar(100) NOT NULL,
-  `GENDER` varchar(100) DEFAULT NULL,
-  `DOB` date NOT NULL,
-  `DOI` date NOT NULL,
-  `DOE` date NOT NULL,
-  `ADDRESS` varchar(100) NOT NULL,
-  `DISTRICT` varchar(100) NOT NULL,
-  `CITY` varchar(100) NOT NULL,
-  `PROVINCE` varchar(100) NOT NULL,
+
+CREATE TABLE nadra_info (
+	
+	CNIC varchar(13) NOT NULL,
+	FName varchar(100) NOT NULL,
+	MName varchar(100) NOT NULL,
+	LName varchar(100) NOT NULL,
+	FATHER_NAME varchar(100) NOT NULL,
+ 	GENDER varchar(100) DEFAULT NULL,
+  DOB date NOT NULL,
+  DOI date NOT NULL,
+  DOE date NOT NULL,
+  ADDRESS varchar(100) NOT NULL,
+  DISTRICT varchar(100) NOT NULL,
+  CITY varchar(100) NOT NULL,
+  PROVINCE varchar(100) NOT NULL,
   PRIMARY KEY (`CNIC`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1
+
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;=latin1

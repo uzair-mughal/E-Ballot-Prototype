@@ -1,0 +1,2 @@
+1-
+insert into nadra_info values ('4200036129965','Uzair Ahmed Mughal','Waheed Ahmed Mughal','Male','2000-10-30','2018-11-16','2028-11-12','Shah Hussain Mohallah','A','Shikarpur','Sindh'); 

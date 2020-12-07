@@ -1,18 +1,47 @@
-1-
 
-CREATE TABLE nadra_info (
-	
-	CNIC varchar(13) NOT NULL,
-	NAME varchar(100) NOT NULL,
-	FATHER_NAME varchar(100) NOT NULL,
- 	GENDER varchar(100) DEFAULT NULL,
-  	DOB date NOT NULL,
- 	DOI date NOT NULL,
-  	DOE date NOT NULL,
-  	ADDRESS varchar(100) NOT NULL,
-  	DISTRICT varchar(100) NOT NULL,
-  	CITY varchar(100) NOT NULL,
-  	PROVINCE varchar(100) NOT NULL,
-  	PRIMARY KEY (`CNIC`)
+CREATE TABLE `nadra_info` (
+  `CNIC` varchar(13) NOT NULL,
+  `NAME` varchar(100) NOT NULL,
+  `FATHER_NAME` varchar(100) NOT NULL,
+  `GENDER` varchar(100) DEFAULT NULL,
+  `DOB` date NOT NULL,
+  `DOI` date NOT NULL,
+  `DOE` date NOT NULL,
+  `ADDRESS` varchar(100) NOT NULL,
+  `NA_REGION_ID` int(11) NOT NULL,
+  `PA_REGION_ID` int(11) NOT NULL,
+  `DISTRICT` varchar(100) NOT NULL,
+  `CITY` varchar(100) NOT NULL,
+  `PROVINCE` varchar(100) NOT NULL,
+  PRIMARY KEY (`CNIC`),
+  KEY `nadra_info_FK` (`PA_REGION_ID`),
+  KEY `nadra_info_FK_1` (`NA_REGION_ID`),
+  CONSTRAINT `nadra_info_FK` FOREIGN KEY (`PA_REGION_ID`) REFERENCES `pa_region` (`PA_REGION_ID`),
+  CONSTRAINT `nadra_info_FK_1` FOREIGN KEY (`NA_REGION_ID`) REFERENCES `na_region` (`NA_REGION_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
 
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+CREATE TABLE `locations` (
+  `LOC_ID` int(11) NOT NULL AUTO_INCREMENT,
+  `DISTRICT` varchar(100) NOT NULL,
+  `PROVINCE` varchar(100) NOT NULL,
+  PRIMARY KEY (`LOC_ID`),
+  UNIQUE KEY `locations_UN` (`DISTRICT`)
+) ENGINE=InnoDB AUTO_INCREMENT=136 DEFAULT CHARSET=latin1
+
+CREATE TABLE `pa_region` (
+  `PA_REGION_ID` int(11) NOT NULL AUTO_INCREMENT,
+  `REGION` int(11) NOT NULL,
+  `LOC_ID` int(11) NOT NULL,
+  PRIMARY KEY (`PA_REGION_ID`),
+  KEY `pa_region_FK` (`LOC_ID`),
+  CONSTRAINT `pa_region_FK` FOREIGN KEY (`LOC_ID`) REFERENCES `locations` (`LOC_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
+
+CREATE TABLE `na_region` (
+  `NA_REGION_ID` int(11) NOT NULL AUTO_INCREMENT,
+  `REGION` int(11) NOT NULL,
+  `LOC_ID` int(11) NOT NULL,
+  PRIMARY KEY (`NA_REGION_ID`),
+  KEY `na_region_FK` (`LOC_ID`),
+  CONSTRAINT `na_region_FK` FOREIGN KEY (`LOC_ID`) REFERENCES `locations` (`LOC_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1

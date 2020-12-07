@@ -16,8 +16,10 @@ CREATE TABLE `nadra_info` (
   PRIMARY KEY (`CNIC`),
   KEY `nadra_info_FK` (`PA_REGION_ID`),
   KEY `nadra_info_FK_1` (`NA_REGION_ID`),
+  KEY `nadra_info_FK_2` (`DISTRICT`),
   CONSTRAINT `nadra_info_FK` FOREIGN KEY (`PA_REGION_ID`) REFERENCES `pa_region` (`PA_REGION_ID`),
-  CONSTRAINT `nadra_info_FK_1` FOREIGN KEY (`NA_REGION_ID`) REFERENCES `na_region` (`NA_REGION_ID`)
+  CONSTRAINT `nadra_info_FK_1` FOREIGN KEY (`NA_REGION_ID`) REFERENCES `na_region` (`NA_REGION_ID`),
+  CONSTRAINT `nadra_info_FK_2` FOREIGN KEY (`DISTRICT`) REFERENCES `locations` (`DISTRICT`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1
 
 CREATE TABLE `locations` (

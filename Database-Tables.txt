@@ -11,7 +11,6 @@ CREATE TABLE `nadra_info` (
   `NA_REGION_ID` int(11) NOT NULL,
   `PA_REGION_ID` int(11) NOT NULL,
   `DISTRICT` varchar(100) NOT NULL,
-  `CITY` varchar(100) NOT NULL,
   `PROVINCE` varchar(100) NOT NULL,
   PRIMARY KEY (`CNIC`),
   KEY `nadra_info_FK` (`PA_REGION_ID`),

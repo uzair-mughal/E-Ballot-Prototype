@@ -46,3 +46,39 @@ CREATE TABLE `na_region` (
   KEY `na_region_FK` (`LOC_ID`),
   CONSTRAINT `na_region_FK` FOREIGN KEY (`LOC_ID`) REFERENCES `locations` (`LOC_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1
+
+CREATE TABLE `candidancy_request` (
+  `CNIC` varchar(100) NOT NULL,
+  `PA_REGION_ID` int(11) DEFAULT NULL,
+  `NA_REGION_ID` int(11) DEFAULT NULL,
+  `PARTY_ID` int(11) NOT NULL,
+  PRIMARY KEY (`CNIC`),
+  KEY `candidancy_request_FK` (`NA_REGION_ID`),
+  KEY `candidancy_request_FK_1` (`PA_REGION_ID`),
+  KEY `candidancy_request_FK_2` (`PARTY_ID`),
+  CONSTRAINT `candidancy_request_FK` FOREIGN KEY (`NA_REGION_ID`) REFERENCES `na_region` (`NA_REGION_ID`),
+  CONSTRAINT `candidancy_request_FK_1` FOREIGN KEY (`PA_REGION_ID`) REFERENCES `pa_region` (`PA_REGION_ID`),
+  CONSTRAINT `candidancy_request_FK_2` FOREIGN KEY (`PARTY_ID`) REFERENCES `party` (`PARTY_ID`),
+  CONSTRAINT `candidancy_request_FK_3` FOREIGN KEY (`CNIC`) REFERENCES `nadra_info` (`CNIC`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
+
+CREATE TABLE `approved_candidates` (
+  `CNIC` varchar(100) NOT NULL,
+  `PA_REGION_ID` int(11) DEFAULT NULL,
+  `NA_REGION_ID` int(11) DEFAULT NULL,
+  `PARTY_ID` int(11) NOT NULL,
+  PRIMARY KEY (`CNIC`),
+  KEY `approved_candidates_FK` (`NA_REGION_ID`),
+  KEY `approved_candidates_FK_1` (`PA_REGION_ID`),
+  KEY `approved_candidates_FK_3` (`PARTY_ID`),
+  CONSTRAINT `approved_candidates_FK` FOREIGN KEY (`NA_REGION_ID`) REFERENCES `na_region` (`NA_REGION_ID`),
+  CONSTRAINT `approved_candidates_FK_1` FOREIGN KEY (`PA_REGION_ID`) REFERENCES `pa_region` (`PA_REGION_ID`),
+  CONSTRAINT `approved_candidates_FK_2` FOREIGN KEY (`CNIC`) REFERENCES `nadra_info` (`CNIC`),
+  CONSTRAINT `approved_candidates_FK_3` FOREIGN KEY (`PARTY_ID`) REFERENCES `party` (`PARTY_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
+
+CREATE TABLE `party` (
+  `PARTY_ID` int(11) NOT NULL AUTO_INCREMENT,
+  `PARTY_NAME` varchar(100) NOT NULL,
+  PRIMARY KEY (`PARTY_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1

@@ -85,7 +85,7 @@ CREATE TABLE `party` (
 
 --> CHECK IT
 
-CREATE TABLE `voting` (
+CREATE TABLE `voting_open_seat` (
   `VOTER_CNIC` varchar(13) NOT NULL,
   `PA_CANDIDATE_CNIC` varchar(13) NOT NULL,
   `NA_CANDIDATE_CNIC` varchar(13) NOT NULL,

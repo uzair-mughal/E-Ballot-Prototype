@@ -83,6 +83,8 @@ CREATE TABLE `party` (
   PRIMARY KEY (`PARTY_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1
 
+--> CHECK IT
+
 CREATE TABLE `voting` (
   `VOTER_CNIC` varchar(13) NOT NULL,
   `PA_CANDIDATE_CNIC` varchar(13) NOT NULL,
@@ -94,6 +96,8 @@ CREATE TABLE `voting` (
   CONSTRAINT `voting_FK_1` FOREIGN KEY (`PA_CANDIDATE_CNIC`) REFERENCES `approved_candidates` (`CNIC`),
   CONSTRAINT `voting_FK_2` FOREIGN KEY (`NA_CANDIDATE_CNIC`) REFERENCES `approved_candidates` (`CNIC`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1
+
+
 
 
 

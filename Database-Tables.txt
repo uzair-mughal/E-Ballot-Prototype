@@ -107,6 +107,19 @@ CREATE TABLE `reserved_seats` (
   PRIMARY KEY (`PROVINCE`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1
 
+CREATE TABLE `reserved_candidancy_request` (
+  `CNIC` varchar(13) NOT NULL,
+  `PA_PROVINCE` varchar(100) DEFAULT NULL,
+  `NA_PROVINCE` varchar(100) DEFAULT NULL,
+  `PARTY_ID` int(11) NOT NULL,
+  PRIMARY KEY (`CNIC`),
+  KEY `reserved_candidancy_request_FK_2` (`PA_PROVINCE`),
+  KEY `reserved_candidancy_request_FK_1` (`NA_PROVINCE`),
+  CONSTRAINT `reserved_candidancy_request_FK` FOREIGN KEY (`CNIC`) REFERENCES `approved_candidates` (`CNIC`),
+  CONSTRAINT `reserved_candidancy_request_FK_1` FOREIGN KEY (`NA_PROVINCE`) REFERENCES `reserved_seats` (`PROVINCE`),
+  CONSTRAINT `reserved_candidancy_request_FK_2` FOREIGN KEY (`PA_PROVINCE`) REFERENCES `reserved_seats` (`PROVINCE`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
+
 
 
 

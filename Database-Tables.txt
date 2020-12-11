@@ -139,3 +139,12 @@ CREATE TABLE `reserved_approved_candidates` (
   CONSTRAINT `reserved_approved_candidates_FK_3` FOREIGN KEY (`PARTY_ID`) REFERENCES `party` (`PARTY_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1
 
+CREATE TABLE `senate_seats` (
+  `PROVINCE` varchar(100) NOT NULL,
+  `SEATS` varchar(100) NOT NULL,
+  PRIMARY KEY (`PROVINCE`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
+
+
+
+

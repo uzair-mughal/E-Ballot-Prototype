@@ -53,7 +53,6 @@ namespace Voter_Panel
                     E_Voting_1 obj = new E_Voting_1(reader);
                     this.Hide();
                     obj.Show();
-
                 }
                 catch
                 {

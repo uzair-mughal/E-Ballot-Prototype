@@ -139,12 +139,6 @@ CREATE TABLE `reserved_approved_candidates` (
   CONSTRAINT `reserved_approved_candidates_FK_3` FOREIGN KEY (`PARTY_ID`) REFERENCES `party` (`PARTY_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1
 
-CREATE TABLE `senate_seats` (
-  `PROVINCE` varchar(100) NOT NULL,
-  `SEATS` varchar(100) NOT NULL,
-  PRIMARY KEY (`PROVINCE`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1
-
 CREATE TABLE `voting_pa_reserved_seat` (
   `VOTER_CNIC` varchar(13) NOT NULL,
   `WOMAN_CANDIDATE_CNIC` varchar(13) NOT NULL,
@@ -169,6 +163,35 @@ CREATE TABLE `voting_na_reserved_seat` (
   CONSTRAINT `voting_na_reserved_seat_FK_2` FOREIGN KEY (`WOMAN_CANDIDATE_CNIC`) REFERENCES `nadra_info` (`CNIC`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1
 
+CREATE TABLE `senate_seats` (
+  `PROVINCE` varchar(100) NOT NULL,
+  `SEATS` varchar(100) NOT NULL,
+  PRIMARY KEY (`PROVINCE`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
+
+CREATE TABLE `senate_candidancy_request` (
+  `CNIC` varchar(13) NOT NULL,
+  `PROVINCE` varchar(100) NOT NULL,
+  `PARTY_ID` int(11) NOT NULL,
+  PRIMARY KEY (`CNIC`),
+  KEY `senate_candidancy_request_FK_1` (`PROVINCE`),
+  KEY `senate_candidancy_request_FK_2` (`PARTY_ID`),
+  CONSTRAINT `senate_candidancy_request_FK` FOREIGN KEY (`CNIC`) REFERENCES `nadra_info` (`CNIC`),
+  CONSTRAINT `senate_candidancy_request_FK_1` FOREIGN KEY (`PROVINCE`) REFERENCES `senate_seats` (`PROVINCE`),
+  CONSTRAINT `senate_candidancy_request_FK_2` FOREIGN KEY (`PARTY_ID`) REFERENCES `party` (`PARTY_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
+
+CREATE TABLE `senate_approved_candidates` (
+  `CNIC` varchar(13) NOT NULL,
+  `PROVINCE` varchar(100) NOT NULL,
+  `PARTY_ID` int(11) NOT NULL,
+  PRIMARY KEY (`CNIC`),
+  KEY `senate_approved_candidates_FK_1` (`PROVINCE`),
+  KEY `senate_approved_candidates_FK_2` (`PARTY_ID`),
+  CONSTRAINT `senate_approved_candidates_FK` FOREIGN KEY (`CNIC`) REFERENCES `nadra_info` (`CNIC`),
+  CONSTRAINT `senate_approved_candidates_FK_1` FOREIGN KEY (`PROVINCE`) REFERENCES `senate_seats` (`PROVINCE`),
+  CONSTRAINT `senate_approved_candidates_FK_2` FOREIGN KEY (`PARTY_ID`) REFERENCES `party` (`PARTY_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
 
 
 

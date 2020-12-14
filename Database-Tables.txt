@@ -193,6 +193,14 @@ CREATE TABLE `senate_approved_candidates` (
   CONSTRAINT `senate_approved_candidates_FK_2` FOREIGN KEY (`PARTY_ID`) REFERENCES `party` (`PARTY_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1
 
+CREATE TABLE `voting_senate` (
+  `VOTER_CNIC` varchar(13) NOT NULL,
+  `SENATE_CANDIDATE_CNIC` varchar(13) NOT NULL,
+  PRIMARY KEY (`VOTER_CNIC`),
+  KEY `voting_senate_FK_1` (`SENATE_CANDIDATE_CNIC`),
+  CONSTRAINT `voting_senate_FK_1` FOREIGN KEY (`SENATE_CANDIDATE_CNIC`) REFERENCES `nadra_info` (`CNIC`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
+
 
 
 

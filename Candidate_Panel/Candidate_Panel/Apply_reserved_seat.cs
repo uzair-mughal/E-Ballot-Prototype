@@ -16,10 +16,12 @@ namespace Candidate_Panel
         public static String cnic;
         public string party;
         public bool check = true;
-        public Apply_reserved_seat(string temp, String temp1)
+        public string gender;
+        public Apply_reserved_seat(string temp, String temp1,string temp2)
         {
             party = temp;
             cnic = temp1;
+            gender = temp2;
             InitializeComponent();
         }
 
@@ -54,6 +56,12 @@ namespace Candidate_Panel
 
             if (prov_comboBox.Enabled == true && desg_comboBox.Text != "" && type_comboBox.Text != "" && prov_comboBox.Text != "")
                 check = true;
+
+            if(type_comboBox.Text == "W" && gender != "Female")
+            {
+                MessageBox.Show("You can't apply in this category!(Not Woman)");
+                return;
+            }
 
             if (check)
             {

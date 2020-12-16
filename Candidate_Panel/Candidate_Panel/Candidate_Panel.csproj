@@ -67,6 +67,12 @@
     <Compile Include="Apply_reserved_seat.Designer.cs">
       <DependentUpon>Apply_reserved_seat.cs</DependentUpon>
     </Compile>
+    <Compile Include="Apply_senate_seat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apply_senate_seat.Designer.cs">
+      <DependentUpon>Apply_senate_seat.cs</DependentUpon>
+    </Compile>
     <Compile Include="E-Ballot.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,18 @@
     <Compile Include="Show_Deatils.Designer.cs">
       <DependentUpon>Show_Deatils.cs</DependentUpon>
     </Compile>
+    <Compile Include="Show_Deatils_Reserved.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Show_Deatils_Reserved.Designer.cs">
+      <DependentUpon>Show_Deatils_Reserved.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Show_Details_Senate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Show_Details_Senate.Designer.cs">
+      <DependentUpon>Show_Details_Senate.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Apply.resx">
       <DependentUpon>Apply.cs</DependentUpon>
     </EmbeddedResource>
@@ -95,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Apply_reserved_seat.resx">
       <DependentUpon>Apply_reserved_seat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apply_senate_seat.resx">
+      <DependentUpon>Apply_senate_seat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="E-Ballot.resx">
       <DependentUpon>E-Ballot.cs</DependentUpon>
@@ -113,6 +134,12 @@
     </Compile>
     <EmbeddedResource Include="Show_Deatils.resx">
       <DependentUpon>Show_Deatils.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Show_Deatils_Reserved.resx">
+      <DependentUpon>Show_Deatils_Reserved.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Show_Details_Senate.resx">
+      <DependentUpon>Show_Details_Senate.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

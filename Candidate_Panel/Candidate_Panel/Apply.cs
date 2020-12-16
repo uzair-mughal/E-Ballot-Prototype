@@ -13,9 +13,11 @@ namespace Candidate_Panel
     public partial class Apply : Form
     {
         public static String cnic;
-        public Apply(String temp)
+        public string gender;
+        public Apply(String temp,string temp1)
         {
             cnic = temp;
+            gender = temp1;
             InitializeComponent();
         }
         public Apply()
@@ -44,7 +46,13 @@ namespace Candidate_Panel
             }
             else if(seat_comboBox.Text == "Reserved Seat")
             {
-                Apply_reserved_seat obj = new Apply_reserved_seat(party_comboBox.Text, cnic);
+                Apply_reserved_seat obj = new Apply_reserved_seat(party_comboBox.Text, cnic,gender);
+                this.Hide();
+                obj.Show();
+            }
+            else if(seat_comboBox.Text == "Sanate Seat")
+            {
+                Apply_senate_seat obj = new Apply_senate_seat(party_comboBox.Text, cnic);
                 this.Hide();
                 obj.Show();
             }

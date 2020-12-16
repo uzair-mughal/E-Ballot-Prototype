@@ -34,20 +34,17 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.open_seat_dataGridView = new System.Windows.Forms.DataGridView();
-            this.reject_button = new System.Windows.Forms.Button();
-            this.approve_button = new System.Windows.Forms.Button();
-            this.back_button = new System.Windows.Forms.Button();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.reserved_dataGridView = new System.Windows.Forms.DataGridView();
-            this.reject_button1 = new System.Windows.Forms.Button();
-            this.approve_button1 = new System.Windows.Forms.Button();
             this.can_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pa_region_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.na_region_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.party_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cand_cnic = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.party_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.reject_button = new System.Windows.Forms.Button();
+            this.approve_button = new System.Windows.Forms.Button();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.reserved_dataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,6 +52,19 @@
             this.type = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.reject_button1 = new System.Windows.Forms.Button();
+            this.approve_button1 = new System.Windows.Forms.Button();
+            this.back_button = new System.Windows.Forms.Button();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.senate_dataGridView = new System.Windows.Forms.DataGridView();
+            this.reject_button2 = new System.Windows.Forms.Button();
+            this.approve_button2 = new System.Windows.Forms.Button();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -63,6 +73,9 @@
             this.tabPage2.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.reserved_dataGridView)).BeginInit();
+            this.tabPage3.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.senate_dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -92,10 +105,11 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(13, 120);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Location = new System.Drawing.Point(17, 120);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(945, 641);
+            this.tabControl1.Size = new System.Drawing.Size(941, 641);
             this.tabControl1.TabIndex = 12;
             // 
             // tabPage1
@@ -104,7 +118,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 32);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(937, 605);
+            this.tabPage1.Size = new System.Drawing.Size(933, 605);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Open Seat ";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -139,102 +153,6 @@
             this.open_seat_dataGridView.Size = new System.Drawing.Size(845, 447);
             this.open_seat_dataGridView.TabIndex = 0;
             this.open_seat_dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.approval_dataGridView_CellContentClick);
-            // 
-            // reject_button
-            // 
-            this.reject_button.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.reject_button.Location = new System.Drawing.Point(748, 503);
-            this.reject_button.Name = "reject_button";
-            this.reject_button.Size = new System.Drawing.Size(117, 34);
-            this.reject_button.TabIndex = 2;
-            this.reject_button.Text = "Reject";
-            this.reject_button.UseVisualStyleBackColor = true;
-            this.reject_button.Click += new System.EventHandler(this.reject_button_Click);
-            // 
-            // approve_button
-            // 
-            this.approve_button.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.approve_button.Location = new System.Drawing.Point(611, 503);
-            this.approve_button.Name = "approve_button";
-            this.approve_button.Size = new System.Drawing.Size(117, 34);
-            this.approve_button.TabIndex = 1;
-            this.approve_button.Text = "Approve";
-            this.approve_button.UseVisualStyleBackColor = true;
-            this.approve_button.Click += new System.EventHandler(this.approve_button_Click);
-            // 
-            // back_button
-            // 
-            this.back_button.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.back_button.Location = new System.Drawing.Point(17, 778);
-            this.back_button.Name = "back_button";
-            this.back_button.Size = new System.Drawing.Size(117, 34);
-            this.back_button.TabIndex = 3;
-            this.back_button.Text = "Back";
-            this.back_button.UseVisualStyleBackColor = true;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.groupBox2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 32);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(937, 605);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Reserved Seats";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.reserved_dataGridView);
-            this.groupBox2.Controls.Add(this.reject_button1);
-            this.groupBox2.Controls.Add(this.approve_button1);
-            this.groupBox2.Location = new System.Drawing.Point(24, 17);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(889, 557);
-            this.groupBox2.TabIndex = 5;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Pending Approvals";
-            // 
-            // reserved_dataGridView
-            // 
-            this.reserved_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.reserved_dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.type,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6});
-            this.reserved_dataGridView.Location = new System.Drawing.Point(20, 40);
-            this.reserved_dataGridView.Name = "reserved_dataGridView";
-            this.reserved_dataGridView.RowHeadersWidth = 51;
-            this.reserved_dataGridView.RowTemplate.Height = 24;
-            this.reserved_dataGridView.Size = new System.Drawing.Size(845, 447);
-            this.reserved_dataGridView.TabIndex = 0;
-            this.reserved_dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.reserved_dataGridView_CellContentClick);
-            // 
-            // reject_button1
-            // 
-            this.reject_button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.reject_button1.Location = new System.Drawing.Point(748, 503);
-            this.reject_button1.Name = "reject_button1";
-            this.reject_button1.Size = new System.Drawing.Size(117, 34);
-            this.reject_button1.TabIndex = 2;
-            this.reject_button1.Text = "Reject";
-            this.reject_button1.UseVisualStyleBackColor = true;
-            this.reject_button1.Click += new System.EventHandler(this.reject_button1_Click);
-            // 
-            // approve_button1
-            // 
-            this.approve_button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.approve_button1.Location = new System.Drawing.Point(611, 503);
-            this.approve_button1.Name = "approve_button1";
-            this.approve_button1.Size = new System.Drawing.Size(117, 34);
-            this.approve_button1.TabIndex = 1;
-            this.approve_button1.Text = "Approve";
-            this.approve_button1.UseVisualStyleBackColor = true;
-            this.approve_button1.Click += new System.EventHandler(this.approve_button1_Click);
             // 
             // can_name
             // 
@@ -285,6 +203,70 @@
             this.party_id.ReadOnly = true;
             this.party_id.Visible = false;
             this.party_id.Width = 125;
+            // 
+            // reject_button
+            // 
+            this.reject_button.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.reject_button.Location = new System.Drawing.Point(748, 503);
+            this.reject_button.Name = "reject_button";
+            this.reject_button.Size = new System.Drawing.Size(117, 34);
+            this.reject_button.TabIndex = 2;
+            this.reject_button.Text = "Reject";
+            this.reject_button.UseVisualStyleBackColor = true;
+            this.reject_button.Click += new System.EventHandler(this.reject_button_Click);
+            // 
+            // approve_button
+            // 
+            this.approve_button.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.approve_button.Location = new System.Drawing.Point(611, 503);
+            this.approve_button.Name = "approve_button";
+            this.approve_button.Size = new System.Drawing.Size(117, 34);
+            this.approve_button.TabIndex = 1;
+            this.approve_button.Text = "Approve";
+            this.approve_button.UseVisualStyleBackColor = true;
+            this.approve_button.Click += new System.EventHandler(this.approve_button_Click);
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.groupBox2);
+            this.tabPage2.Location = new System.Drawing.Point(4, 32);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(933, 605);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Reserved Seats";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.reserved_dataGridView);
+            this.groupBox2.Controls.Add(this.reject_button1);
+            this.groupBox2.Controls.Add(this.approve_button1);
+            this.groupBox2.Location = new System.Drawing.Point(24, 17);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(889, 557);
+            this.groupBox2.TabIndex = 5;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Pending Approvals";
+            // 
+            // reserved_dataGridView
+            // 
+            this.reserved_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.reserved_dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.type,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6});
+            this.reserved_dataGridView.Location = new System.Drawing.Point(20, 40);
+            this.reserved_dataGridView.Name = "reserved_dataGridView";
+            this.reserved_dataGridView.RowHeadersWidth = 51;
+            this.reserved_dataGridView.RowTemplate.Height = 24;
+            this.reserved_dataGridView.Size = new System.Drawing.Size(845, 447);
+            this.reserved_dataGridView.TabIndex = 0;
+            this.reserved_dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.reserved_dataGridView_CellContentClick);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -344,6 +326,142 @@
             this.dataGridViewTextBoxColumn6.Visible = false;
             this.dataGridViewTextBoxColumn6.Width = 125;
             // 
+            // reject_button1
+            // 
+            this.reject_button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.reject_button1.Location = new System.Drawing.Point(748, 503);
+            this.reject_button1.Name = "reject_button1";
+            this.reject_button1.Size = new System.Drawing.Size(117, 34);
+            this.reject_button1.TabIndex = 2;
+            this.reject_button1.Text = "Reject";
+            this.reject_button1.UseVisualStyleBackColor = true;
+            this.reject_button1.Click += new System.EventHandler(this.reject_button1_Click);
+            // 
+            // approve_button1
+            // 
+            this.approve_button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.approve_button1.Location = new System.Drawing.Point(611, 503);
+            this.approve_button1.Name = "approve_button1";
+            this.approve_button1.Size = new System.Drawing.Size(117, 34);
+            this.approve_button1.TabIndex = 1;
+            this.approve_button1.Text = "Approve";
+            this.approve_button1.UseVisualStyleBackColor = true;
+            this.approve_button1.Click += new System.EventHandler(this.approve_button1_Click);
+            // 
+            // back_button
+            // 
+            this.back_button.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.back_button.Location = new System.Drawing.Point(17, 778);
+            this.back_button.Name = "back_button";
+            this.back_button.Size = new System.Drawing.Size(117, 34);
+            this.back_button.TabIndex = 3;
+            this.back_button.Text = "Back";
+            this.back_button.UseVisualStyleBackColor = true;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.groupBox3);
+            this.tabPage3.Location = new System.Drawing.Point(4, 32);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(933, 605);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Senate Seats";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.senate_dataGridView);
+            this.groupBox3.Controls.Add(this.reject_button2);
+            this.groupBox3.Controls.Add(this.approve_button2);
+            this.groupBox3.Location = new System.Drawing.Point(24, 17);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(889, 557);
+            this.groupBox3.TabIndex = 5;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Pending Approvals";
+            // 
+            // senate_dataGridView
+            // 
+            this.senate_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.senate_dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn12});
+            this.senate_dataGridView.Location = new System.Drawing.Point(20, 40);
+            this.senate_dataGridView.Name = "senate_dataGridView";
+            this.senate_dataGridView.RowHeadersWidth = 51;
+            this.senate_dataGridView.RowTemplate.Height = 24;
+            this.senate_dataGridView.Size = new System.Drawing.Size(845, 447);
+            this.senate_dataGridView.TabIndex = 0;
+            this.senate_dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // reject_button2
+            // 
+            this.reject_button2.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.reject_button2.Location = new System.Drawing.Point(748, 503);
+            this.reject_button2.Name = "reject_button2";
+            this.reject_button2.Size = new System.Drawing.Size(117, 34);
+            this.reject_button2.TabIndex = 2;
+            this.reject_button2.Text = "Reject";
+            this.reject_button2.UseVisualStyleBackColor = true;
+            this.reject_button2.Click += new System.EventHandler(this.reject_button2_Click);
+            // 
+            // approve_button2
+            // 
+            this.approve_button2.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.approve_button2.Location = new System.Drawing.Point(611, 503);
+            this.approve_button2.Name = "approve_button2";
+            this.approve_button2.Size = new System.Drawing.Size(117, 34);
+            this.approve_button2.TabIndex = 1;
+            this.approve_button2.Text = "Approve";
+            this.approve_button2.UseVisualStyleBackColor = true;
+            this.approve_button2.Click += new System.EventHandler(this.approve_button2_Click);
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn7.HeaderText = "Candidate Name";
+            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.HeaderText = "Province";
+            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            this.dataGridViewTextBoxColumn8.Width = 170;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.HeaderText = "Party Name";
+            this.dataGridViewTextBoxColumn10.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
+            this.dataGridViewTextBoxColumn10.Width = 157;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.HeaderText = "Cand CNIC";
+            this.dataGridViewTextBoxColumn11.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.ReadOnly = true;
+            this.dataGridViewTextBoxColumn11.Visible = false;
+            this.dataGridViewTextBoxColumn11.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.HeaderText = "Party ID";
+            this.dataGridViewTextBoxColumn12.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.ReadOnly = true;
+            this.dataGridViewTextBoxColumn12.Visible = false;
+            this.dataGridViewTextBoxColumn12.Width = 125;
+            // 
             // Election_Commission
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
@@ -368,6 +486,9 @@
             this.tabPage2.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.reserved_dataGridView)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.senate_dataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -401,5 +522,15 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn type;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.DataGridView senate_dataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.Button reject_button2;
+        private System.Windows.Forms.Button approve_button2;
     }
 }

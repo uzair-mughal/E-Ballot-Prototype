@@ -26,6 +26,11 @@ namespace Election_Commission_Panel
         public string partyid1;
         public string seat_type;
 
+        //for senate seats
+        public string nic2 = "NULL";
+        public string province;
+        public string partyid2;
+
         public Election_Commission()
         {
             InitializeComponent();
@@ -95,6 +100,31 @@ namespace Election_Commission_Panel
             }
 
         }
+
+        public void load_grid_senate()
+        {
+            string str = "server=localhost;port=3306;username=root;password=;database=e_ballot;";
+            MySqlConnection con = new MySqlConnection(str);
+            con.Open();
+            string query = "select ni.NAME ,scr.PROVINCE ,p.PARTY_NAME, scr.CNIC ,p.PARTY_ID from senate_candidancy_request scr ,nadra_info ni,party p where scr.CNIC =ni.CNIC and scr.PARTY_ID = p.PARTY_ID;";
+            MySqlCommand cmd = new MySqlCommand(query, con);
+            MySqlDataReader reader = cmd.ExecuteReader();
+            senate_dataGridView.Rows.Clear();
+
+            try
+            {
+                while (reader.Read())
+                {
+
+                    senate_dataGridView.Rows.Add(reader.GetString(0), reader.GetString(1), reader.GetString(2), reader.GetString(3), reader.GetString(4));
+                }
+            }
+            catch
+            {
+                con.Close();
+            }
+
+        }
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -104,6 +134,7 @@ namespace Election_Commission_Panel
         {
             load_grid_open_seat();
             load_grid_reserved();
+            load_grid_senate();
         }
 
         private void approval_dataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -114,6 +145,7 @@ namespace Election_Commission_Panel
             pa_reg = Convert.ToString(row.Cells[1].Value);
             na_reg = Convert.ToString(row.Cells[2].Value);
             partyid = Convert.ToString(row.Cells[5].Value);
+            MessageBox.Show("Candidate Selected: " + Convert.ToString(row.Cells[0].Value));
         }
 
         private void tabPage1_Click(object sender, EventArgs e)
@@ -135,9 +167,9 @@ namespace Election_Commission_Panel
                 query = "delete from candidancy_request where cnic=" + nic + ";";
                 cmd = new MySqlCommand(query, con);
                 con.Open();
-                cmd.ExecuteReader();
-                load_grid_open_seat();
+                cmd.ExecuteReader();                
                 con.Close();
+                load_grid_open_seat();
             }
             else
             {
@@ -153,8 +185,8 @@ namespace Election_Commission_Panel
             string query = "delete from candidancy_request where cnic=" + nic + ";";
             MySqlCommand cmd = new MySqlCommand(query, con);
             cmd.ExecuteReader();
-            load_grid_open_seat();
             con.Close();
+            load_grid_open_seat();
         }
 
         private void reserved_dataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -166,6 +198,7 @@ namespace Election_Commission_Panel
             na_prov = Convert.ToString(row.Cells[2].Value);
             partyid1 = Convert.ToString(row.Cells[6].Value);
             seat_type = Convert.ToString(row.Cells[4].Value);
+            MessageBox.Show("Candidate Selected: " + Convert.ToString(row.Cells[0].Value));
         }
 
         
@@ -177,7 +210,15 @@ namespace Election_Commission_Panel
                 string str = "server=localhost;port=3306;username=root;password=;database=e_ballot;";
                 MySqlConnection con = new MySqlConnection(str);
                 con.Open();
-                string query = "insert into reserved_approved_candidates values('" + nic1 + "'," + pa_prov + ",'" + na_prov + "','" + partyid1 + "','" + seat_type + "');";
+                string query="";
+
+                if(pa_prov=="NULL" && na_prov=="Null")
+                    query = "insert into reserved_approved_candidates values('" + nic1 + "', " + pa_prov + " ," + na_prov + ",'" + partyid1 + "','" + seat_type + "');";
+                else if (na_prov=="NULL")
+                    query = "insert into reserved_approved_candidates values('" + nic1 + "', '" + pa_prov + "' ," + na_prov + ",'" + partyid1 + "','" + seat_type + "');";
+                else if(pa_prov=="NULL")
+                    query = "insert into reserved_approved_candidates values('" + nic1 + "', " + pa_prov + " ,'" + na_prov + "','" + partyid1 + "','" + seat_type + "');";
+                
                 MySqlCommand cmd = new MySqlCommand(query, con);
                 cmd.ExecuteReader();
                 con.Close();
@@ -185,8 +226,8 @@ namespace Election_Commission_Panel
                 cmd = new MySqlCommand(query, con);
                 con.Open();
                 cmd.ExecuteReader();
-                load_grid_reserved();
                 con.Close();
+                load_grid_reserved();
             }
             else
             {
@@ -202,8 +243,56 @@ namespace Election_Commission_Panel
             string query = "delete from reserved_candidancy_request where cnic=" + nic1 + ";";
             MySqlCommand cmd = new MySqlCommand(query, con);
             cmd.ExecuteReader();
+            con.Close();
+            load_grid_reserved();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int rowIndex = e.RowIndex;
+            DataGridViewRow row = senate_dataGridView.Rows[rowIndex];
+            nic2 = Convert.ToString(row.Cells[3].Value);
+            province = Convert.ToString(row.Cells[1].Value);
+            partyid2 = Convert.ToString(row.Cells[4].Value);
+            MessageBox.Show("Candidate Selected: " + Convert.ToString(row.Cells[0].Value));
+        }
+
+        private void approve_button2_Click(object sender, EventArgs e)
+        {
+            if (nic2 != "NULL")
+            {
+                string str = "server=localhost;port=3306;username=root;password=;database=e_ballot;";
+                MySqlConnection con = new MySqlConnection(str);
+                con.Open();
+                string query = "insert into senate_approved_candidates values('"+nic2+"','"+province+"',"+partyid2+");";
+                MySqlCommand cmd = new MySqlCommand(query, con);
+                cmd.ExecuteReader();
+                con.Close();
+                query = "delete from senate_candidancy_request where cnic=" + nic2 + ";";
+                cmd = new MySqlCommand(query, con);
+                con.Open();
+                cmd.ExecuteReader();
+                load_grid_reserved();
+                con.Close();
+                load_grid_senate();
+            }
+            else
+            {
+                MessageBox.Show("Please select a candidate!");
+            }
+        }
+
+        private void reject_button2_Click(object sender, EventArgs e)
+        {
+            string str = "server=localhost;port=3306;username=root;password=;database=e_ballot;";
+            MySqlConnection con = new MySqlConnection(str);
+            con.Open();
+            string query = "delete from senate_candidancy_request where cnic=" + nic2 + ";";
+            MySqlCommand cmd = new MySqlCommand(query, con);
+            cmd.ExecuteReader();
             load_grid_reserved();
             con.Close();
+            load_grid_senate();
         }
     }
 }

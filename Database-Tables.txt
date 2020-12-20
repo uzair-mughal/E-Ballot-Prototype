@@ -77,11 +77,16 @@ CREATE TABLE `approved_candidates` (
   CONSTRAINT `approved_candidates_FK_3` FOREIGN KEY (`PARTY_ID`) REFERENCES `party` (`PARTY_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1
 
+
 CREATE TABLE `party` (
   `PARTY_ID` int(11) NOT NULL AUTO_INCREMENT,
   `PARTY_NAME` varchar(100) NOT NULL,
-  PRIMARY KEY (`PARTY_ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1
+  `party_leader` varchar(13) DEFAULT NULL,
+  PRIMARY KEY (`PARTY_ID`),
+  KEY `party_fk` (`party_leader`),
+  CONSTRAINT `party_fk` FOREIGN KEY (`party_leader`) REFERENCES `nadra_info` (`CNIC`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+
 
 --> CHECK IT
 
@@ -201,6 +206,28 @@ CREATE TABLE `voting_senate` (
   CONSTRAINT `voting_senate_FK_1` FOREIGN KEY (`SENATE_CANDIDATE_CNIC`) REFERENCES `nadra_info` (`CNIC`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1
 
+CREATE TABLE `voting_pm` (
+  `VOTER_CNIC` varchar(13) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `pm_candidate_cnic` varchar(13) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  PRIMARY KEY (`VOTER_CNIC`),
+  KEY `newtable_fk_1` (`pm_candidate_cnic`),
+  CONSTRAINT `newtable_fk` FOREIGN KEY (`VOTER_CNIC`) REFERENCES `nadra_info` (`CNIC`),
+  CONSTRAINT `newtable_fk_1` FOREIGN KEY (`pm_candidate_cnic`) REFERENCES `nadra_info` (`CNIC`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+CREATE TABLE `seat_type` (
+  `seat_type` varchar(100) NOT NULL,
+  PRIMARY KEY (`seat_type`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE `voting_time` (
+  `start_date` datetime NOT NULL,
+  `end_date` datetime NOT NULL,
+  `seat_type` varchar(100) NOT NULL,
+  `closed` tinyint(1) DEFAULT NULL,
+  PRIMARY KEY (`start_date`,`end_date`,`seat_type`),
+  KEY `voting_time_fk` (`seat_type`),
+  CONSTRAINT `voting_time_fk` FOREIGN KEY (`seat_type`) REFERENCES `seat_type` (`seat_type`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 

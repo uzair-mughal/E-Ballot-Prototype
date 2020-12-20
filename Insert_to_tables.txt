@@ -1,6 +1,13 @@
 1-
 insert into nadra_info values ('4200036129965','Uzair Ahmed Mughal','Waheed Ahmed Mughal','Male','2000-10-30','2018-11-16','2028-11-12','Shah Hussain Mohallah',1,1,'Shikarpur','Sindh'); 
 
+insert into nadra_info values ('9999999999990','Imran Khan','','Male','1955-10-30','2018-11-16','2028-11-12','Bani Gala',3,6,'Rawalpindi','Punjab');
+insert into nadra_info values ('9999999999991','Bilawal Apa','','Male','1955-10-30','2018-11-16','2028-11-12','Home',3,6,'Rawalpindi','Punjab');
+insert into nadra_info values ('9999999999992','Mariam Nawaz','','Female','1955-10-30','2018-11-16','2028-11-12','Home',3,6,'Rawalpindi','Punjab');
+insert into nadra_info values ('9999999999993','Maulana Diesel','','Male','1955-10-30','2018-11-16','2028-11-12','Home',3,6,'Rawalpindi','Punjab');
+
+
+
 -- Reserved Seats Insertion
 INSERT INTO reserved_seats
 (PROVINCE, PA_WOMEN_SEATS, NA_WOMEN_SEATS, PA_NON_MUSLIMS_SEATS, NA_NON_MUSLIMS_SEATS)

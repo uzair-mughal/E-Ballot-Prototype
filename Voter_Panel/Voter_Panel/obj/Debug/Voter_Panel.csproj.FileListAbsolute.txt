@@ -1,0 +1,39 @@
+D:\5th Semester\DB\Project\Voter_Panel\Voter_Panel\obj\Debug\Voter_Panel.csprojAssemblyReference.cache
+D:\5th Semester\DB\Project\Voter_Panel\Voter_Panel\obj\Debug\Voter_Panel.E_Voting.resources
+D:\5th Semester\DB\Project\Voter_Panel\Voter_Panel\obj\Debug\Voter_Panel.Properties.Resources.resources
+D:\5th Semester\DB\Project\Voter_Panel\Voter_Panel\obj\Debug\Voter_Panel.csproj.GenerateResource.cache
+D:\5th Semester\DB\Project\Voter_Panel\Voter_Panel\obj\Debug\Voter_Panel.csproj.CoreCompileInputs.cache
+D:\5th Semester\DB\Project\Voter_Panel\Voter_Panel\bin\Debug\Voter_Panel.exe.config
+D:\5th Semester\DB\Project\Voter_Panel\Voter_Panel\bin\Debug\Voter_Panel.exe
+D:\5th Semester\DB\Project\Voter_Panel\Voter_Panel\bin\Debug\Voter_Panel.pdb
+D:\5th Semester\DB\Project\Voter_Panel\Voter_Panel\bin\Debug\MySql.Data.dll
+D:\5th Semester\DB\Project\Voter_Panel\Voter_Panel\obj\Debug\Voter_Panel.csproj.CopyComplete
+D:\5th Semester\DB\Project\Voter_Panel\Voter_Panel\obj\Debug\Voter_Panel.exe
+D:\5th Semester\DB\Project\Voter_Panel\Voter_Panel\obj\Debug\Voter_Panel.pdb
+D:\5th Semester\DB\Project\Voter_Panel\Voter_Panel\obj\Debug\Voter_Panel.E_Voting_1.resources
+C:\myFolder\CourseWork\FAST\DB\project\Voter_Panel\Voter_Panel\bin\Debug\Voter_Panel.exe.config
+C:\myFolder\CourseWork\FAST\DB\project\Voter_Panel\Voter_Panel\bin\Debug\Voter_Panel.exe
+C:\myFolder\CourseWork\FAST\DB\project\Voter_Panel\Voter_Panel\bin\Debug\Voter_Panel.pdb
+C:\myFolder\CourseWork\FAST\DB\project\Voter_Panel\Voter_Panel\bin\Debug\MySql.Data.dll
+C:\myFolder\CourseWork\FAST\DB\project\Voter_Panel\Voter_Panel\obj\Debug\Voter_Panel.csprojAssemblyReference.cache
+C:\myFolder\CourseWork\FAST\DB\project\Voter_Panel\Voter_Panel\obj\Debug\Voter_Panel.E_Voting_1.resources
+C:\myFolder\CourseWork\FAST\DB\project\Voter_Panel\Voter_Panel\obj\Debug\Voter_Panel.E_Voting.resources
+C:\myFolder\CourseWork\FAST\DB\project\Voter_Panel\Voter_Panel\obj\Debug\Voter_Panel.Properties.Resources.resources
+C:\myFolder\CourseWork\FAST\DB\project\Voter_Panel\Voter_Panel\obj\Debug\Voter_Panel.csproj.GenerateResource.cache
+C:\myFolder\CourseWork\FAST\DB\project\Voter_Panel\Voter_Panel\obj\Debug\Voter_Panel.csproj.CoreCompileInputs.cache
+C:\myFolder\CourseWork\FAST\DB\project\Voter_Panel\Voter_Panel\obj\Debug\Voter_Panel.csproj.CopyComplete
+C:\myFolder\CourseWork\FAST\DB\project\Voter_Panel\Voter_Panel\obj\Debug\Voter_Panel.exe
+C:\myFolder\CourseWork\FAST\DB\project\Voter_Panel\Voter_Panel\obj\Debug\Voter_Panel.pdb
+D:\5th Semester\DB\Project - I\Voter_Panel\Voter_Panel\bin\Debug\Voter_Panel.exe.config
+D:\5th Semester\DB\Project - I\Voter_Panel\Voter_Panel\bin\Debug\Voter_Panel.exe
+D:\5th Semester\DB\Project - I\Voter_Panel\Voter_Panel\bin\Debug\Voter_Panel.pdb
+D:\5th Semester\DB\Project - I\Voter_Panel\Voter_Panel\bin\Debug\MySql.Data.dll
+D:\5th Semester\DB\Project - I\Voter_Panel\Voter_Panel\obj\Debug\Voter_Panel.csprojAssemblyReference.cache
+D:\5th Semester\DB\Project - I\Voter_Panel\Voter_Panel\obj\Debug\Voter_Panel.E_Voting_1.resources
+D:\5th Semester\DB\Project - I\Voter_Panel\Voter_Panel\obj\Debug\Voter_Panel.E_Voting.resources
+D:\5th Semester\DB\Project - I\Voter_Panel\Voter_Panel\obj\Debug\Voter_Panel.Properties.Resources.resources
+D:\5th Semester\DB\Project - I\Voter_Panel\Voter_Panel\obj\Debug\Voter_Panel.csproj.GenerateResource.cache
+D:\5th Semester\DB\Project - I\Voter_Panel\Voter_Panel\obj\Debug\Voter_Panel.csproj.CoreCompileInputs.cache
+D:\5th Semester\DB\Project - I\Voter_Panel\Voter_Panel\obj\Debug\Voter_Panel.csproj.CopyComplete
+D:\5th Semester\DB\Project - I\Voter_Panel\Voter_Panel\obj\Debug\Voter_Panel.exe
+D:\5th Semester\DB\Project - I\Voter_Panel\Voter_Panel\obj\Debug\Voter_Panel.pdb

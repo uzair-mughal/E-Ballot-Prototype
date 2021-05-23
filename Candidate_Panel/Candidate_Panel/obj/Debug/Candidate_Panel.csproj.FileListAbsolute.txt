@@ -1,0 +1,67 @@
+D:\5th Semester\DB\Project\Candidate_Panel\Candidate_Panel\bin\Debug\Candidate_Panel.exe.config
+D:\5th Semester\DB\Project\Candidate_Panel\Candidate_Panel\bin\Debug\Candidate_Panel.exe
+D:\5th Semester\DB\Project\Candidate_Panel\Candidate_Panel\bin\Debug\Candidate_Panel.pdb
+D:\5th Semester\DB\Project\Candidate_Panel\Candidate_Panel\obj\Debug\Candidate_Panel.csprojAssemblyReference.cache
+D:\5th Semester\DB\Project\Candidate_Panel\Candidate_Panel\obj\Debug\Candidate_Panel.E_Ballot.resources
+D:\5th Semester\DB\Project\Candidate_Panel\Candidate_Panel\obj\Debug\Candidate_Panel.Properties.Resources.resources
+D:\5th Semester\DB\Project\Candidate_Panel\Candidate_Panel\obj\Debug\Candidate_Panel.csproj.GenerateResource.cache
+D:\5th Semester\DB\Project\Candidate_Panel\Candidate_Panel\obj\Debug\Candidate_Panel.csproj.CoreCompileInputs.cache
+D:\5th Semester\DB\Project\Candidate_Panel\Candidate_Panel\obj\Debug\Candidate_Panel.exe
+D:\5th Semester\DB\Project\Candidate_Panel\Candidate_Panel\obj\Debug\Candidate_Panel.pdb
+D:\5th Semester\DB\Project\Candidate_Panel\Candidate_Panel\bin\Debug\MySql.Data.dll
+D:\5th Semester\DB\Project\Candidate_Panel\Candidate_Panel\bin\Debug\Google.Protobuf.dll
+D:\5th Semester\DB\Project\Candidate_Panel\Candidate_Panel\bin\Debug\Zstandard.Net.dll
+D:\5th Semester\DB\Project\Candidate_Panel\Candidate_Panel\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\5th Semester\DB\Project\Candidate_Panel\Candidate_Panel\bin\Debug\BouncyCastle.Crypto.dll
+D:\5th Semester\DB\Project\Candidate_Panel\Candidate_Panel\bin\Debug\Ubiety.Dns.Core.dll
+D:\5th Semester\DB\Project\Candidate_Panel\Candidate_Panel\bin\Debug\Renci.SshNet.dll
+D:\5th Semester\DB\Project\Candidate_Panel\Candidate_Panel\bin\Debug\System.Buffers.dll
+D:\5th Semester\DB\Project\Candidate_Panel\Candidate_Panel\bin\Debug\K4os.Compression.LZ4.dll
+D:\5th Semester\DB\Project\Candidate_Panel\Candidate_Panel\bin\Debug\K4os.Hash.xxHash.dll
+D:\5th Semester\DB\Project\Candidate_Panel\Candidate_Panel\bin\Debug\System.Memory.dll
+D:\5th Semester\DB\Project\Candidate_Panel\Candidate_Panel\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\5th Semester\DB\Project\Candidate_Panel\Candidate_Panel\bin\Debug\System.Numerics.Vectors.dll
+D:\5th Semester\DB\Project\Candidate_Panel\Candidate_Panel\bin\Debug\MySql.Data.xml
+D:\5th Semester\DB\Project\Candidate_Panel\Candidate_Panel\obj\Debug\Candidate_Panel.exe.config
+D:\5th Semester\DB\Project\Candidate_Panel\Candidate_Panel\obj\Debug\Candidate_Panel.csproj.CopyComplete
+D:\5th Semester\DB\Project\Candidate_Panel\Candidate_Panel\obj\Debug\Candidate_Panel.E_Ballot_1.resources
+D:\5th Semester\DB\Project\Candidate_Panel\Candidate_Panel\obj\Debug\Candidate_Panel.Apply.resources
+D:\5th Semester\DB\Project\Candidate_Panel\Candidate_Panel\obj\Debug\Candidate_Panel.Apply_open_seat.resources
+D:\5th Semester\DB\Project\Candidate_Panel\Candidate_Panel\obj\Debug\Candidate_Panel.Show_Deatils.resources
+D:\5th Semester\DB\Project\Candidate_Panel\Candidate_Panel\obj\Debug\Candidate_Panel.Apply_reserved_seat.resources
+D:\5th Semester\DB\Project\Candidate_Panel\Candidate_Panel\obj\Debug\Candidate_Panel.Show_Deatils_Reserved.resources
+D:\5th Semester\DB\Project\Candidate_Panel\Candidate_Panel\obj\Debug\Candidate_Panel.Apply_senate_seat.resources
+D:\5th Semester\DB\Project\Candidate_Panel\Candidate_Panel\obj\Debug\Candidate_Panel.Show_Details_Senate.resources
+C:\myFolder\CourseWork\FAST\DB\project\Candidate_Panel\Candidate_Panel\bin\Debug\Candidate_Panel.exe.config
+C:\myFolder\CourseWork\FAST\DB\project\Candidate_Panel\Candidate_Panel\bin\Debug\Candidate_Panel.exe
+C:\myFolder\CourseWork\FAST\DB\project\Candidate_Panel\Candidate_Panel\bin\Debug\Candidate_Panel.pdb
+C:\myFolder\CourseWork\FAST\DB\project\Candidate_Panel\Candidate_Panel\bin\Debug\Google.Protobuf.dll
+C:\myFolder\CourseWork\FAST\DB\project\Candidate_Panel\Candidate_Panel\bin\Debug\Zstandard.Net.dll
+C:\myFolder\CourseWork\FAST\DB\project\Candidate_Panel\Candidate_Panel\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\myFolder\CourseWork\FAST\DB\project\Candidate_Panel\Candidate_Panel\bin\Debug\BouncyCastle.Crypto.dll
+C:\myFolder\CourseWork\FAST\DB\project\Candidate_Panel\Candidate_Panel\bin\Debug\Ubiety.Dns.Core.dll
+C:\myFolder\CourseWork\FAST\DB\project\Candidate_Panel\Candidate_Panel\bin\Debug\Renci.SshNet.dll
+C:\myFolder\CourseWork\FAST\DB\project\Candidate_Panel\Candidate_Panel\bin\Debug\System.Buffers.dll
+C:\myFolder\CourseWork\FAST\DB\project\Candidate_Panel\Candidate_Panel\bin\Debug\K4os.Compression.LZ4.dll
+C:\myFolder\CourseWork\FAST\DB\project\Candidate_Panel\Candidate_Panel\bin\Debug\K4os.Hash.xxHash.dll
+C:\myFolder\CourseWork\FAST\DB\project\Candidate_Panel\Candidate_Panel\bin\Debug\System.Memory.dll
+C:\myFolder\CourseWork\FAST\DB\project\Candidate_Panel\Candidate_Panel\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\myFolder\CourseWork\FAST\DB\project\Candidate_Panel\Candidate_Panel\bin\Debug\System.Numerics.Vectors.dll
+C:\myFolder\CourseWork\FAST\DB\project\Candidate_Panel\Candidate_Panel\bin\Debug\MySql.Data.xml
+C:\myFolder\CourseWork\FAST\DB\project\Candidate_Panel\Candidate_Panel\obj\Debug\Candidate_Panel.csprojAssemblyReference.cache
+C:\myFolder\CourseWork\FAST\DB\project\Candidate_Panel\Candidate_Panel\obj\Debug\Candidate_Panel.exe.config
+C:\myFolder\CourseWork\FAST\DB\project\Candidate_Panel\Candidate_Panel\obj\Debug\Candidate_Panel.Apply.resources
+C:\myFolder\CourseWork\FAST\DB\project\Candidate_Panel\Candidate_Panel\obj\Debug\Candidate_Panel.Apply_open_seat.resources
+C:\myFolder\CourseWork\FAST\DB\project\Candidate_Panel\Candidate_Panel\obj\Debug\Candidate_Panel.Apply_reserved_seat.resources
+C:\myFolder\CourseWork\FAST\DB\project\Candidate_Panel\Candidate_Panel\obj\Debug\Candidate_Panel.Apply_senate_seat.resources
+C:\myFolder\CourseWork\FAST\DB\project\Candidate_Panel\Candidate_Panel\obj\Debug\Candidate_Panel.E_Ballot.resources
+C:\myFolder\CourseWork\FAST\DB\project\Candidate_Panel\Candidate_Panel\obj\Debug\Candidate_Panel.E_Ballot_1.resources
+C:\myFolder\CourseWork\FAST\DB\project\Candidate_Panel\Candidate_Panel\obj\Debug\Candidate_Panel.Properties.Resources.resources
+C:\myFolder\CourseWork\FAST\DB\project\Candidate_Panel\Candidate_Panel\obj\Debug\Candidate_Panel.Show_Deatils.resources
+C:\myFolder\CourseWork\FAST\DB\project\Candidate_Panel\Candidate_Panel\obj\Debug\Candidate_Panel.Show_Deatils_Reserved.resources
+C:\myFolder\CourseWork\FAST\DB\project\Candidate_Panel\Candidate_Panel\obj\Debug\Candidate_Panel.Show_Details_Senate.resources
+C:\myFolder\CourseWork\FAST\DB\project\Candidate_Panel\Candidate_Panel\obj\Debug\Candidate_Panel.csproj.GenerateResource.cache
+C:\myFolder\CourseWork\FAST\DB\project\Candidate_Panel\Candidate_Panel\obj\Debug\Candidate_Panel.csproj.CoreCompileInputs.cache
+C:\myFolder\CourseWork\FAST\DB\project\Candidate_Panel\Candidate_Panel\obj\Debug\Candidate_Panel.csproj.CopyComplete
+C:\myFolder\CourseWork\FAST\DB\project\Candidate_Panel\Candidate_Panel\obj\Debug\Candidate_Panel.exe
+C:\myFolder\CourseWork\FAST\DB\project\Candidate_Panel\Candidate_Panel\obj\Debug\Candidate_Panel.pdb
